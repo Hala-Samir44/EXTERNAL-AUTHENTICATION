@@ -1,0 +1,29 @@
+<div class="m-5">
+    <div class="text-center text-primary d-flex justify-content-center">
+        <h1>All Permissions</h1>
+        <div class="position-relative" style="left:250px; top :10px">
+            <app-add-permission (myEvent)="permissionAdded($event)"></app-add-permission>
+        </div>
+    </div>
+    <div class="p-3 m-3">
+        <table class=" w-100 text-center border border-secondary">
+            <tr style="background-color: rgb(139, 211, 211);">
+                <td class="w-20">Title</td>
+                <td class="w-25">Description</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr *ngFor="let permission of Permissions;" class="w-100">
+                <td>{{permission.title}}</td>
+                <td>{{permission.description}}</td>
+
+                <td><a (click)="EditPermissionModal(permission.id)"><i class="fas fa-edit text-success"></i></a></td>
+                <td><a (click)="DeletePermission(permission.id)"><i class="fas fa-trash text-danger"></i></a></td>
+            </tr>
+        </table>
+
+    </div>
+
+
+</div>

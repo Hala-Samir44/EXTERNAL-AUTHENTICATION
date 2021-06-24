@@ -1,0 +1,5 @@
+C:\Users\Hala\Desktop\EXTERNAL AUTHENTICATION\EXTERNAL-AUTHENTICATION\ExternalAuth-BE\ExternalAuth-BE\obj\Debug\netcoreapp3.1\ExternalAuth-BE.csprojAssemblyReference.cache
+C:\Users\Hala\Desktop\EXTERNAL AUTHENTICATION\EXTERNAL-AUTHENTICATION\ExternalAuth-BE\ExternalAuth-BE\obj\Debug\netcoreapp3.1\ExternalAuth-BE.AssemblyInfoInputs.cache
+C:\Users\Hala\Desktop\EXTERNAL AUTHENTICATION\EXTERNAL-AUTHENTICATION\ExternalAuth-BE\ExternalAuth-BE\obj\Debug\netcoreapp3.1\ExternalAuth-BE.AssemblyInfo.cs
+C:\Users\Hala\Desktop\EXTERNAL AUTHENTICATION\EXTERNAL-AUTHENTICATION\ExternalAuth-BE\ExternalAuth-BE\obj\Debug\netcoreapp3.1\ExternalAuth-BE.csproj.CoreCompileInputs.cache
+C:\Users\Hala\Desktop\EXTERNAL AUTHENTICATION\EXTERNAL-AUTHENTICATION\ExternalAuth-BE\ExternalAuth-BE\obj\Debug\netcoreapp3.1\ExternalAuth-BE.MvcApplicationPartsAssemblyInfo.cache

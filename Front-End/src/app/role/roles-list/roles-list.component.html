@@ -1,0 +1,41 @@
+<div class="m-5">
+    <div class="text-center text-primary d-flex justify-content-center">
+        <h1>All Roles And It's Permissions</h1>
+        <div class="position-relative" style="left:250px; top :10px">
+            <app-add-role (myEvent)="roleAdded($event)"></app-add-role>
+        </div>
+    </div>
+    <div class="p-3 m-3">
+        <table class=" w-100 text-center border border-secondary">
+            <tr style="background-color: rgb(139, 211, 211);">
+                <td rowspan="2" class="w-20">Title</td>
+                <td rowspan="2" class="w-25">Description</td>
+                <td [attr.colspan]="perlenth" class="bg-warning">
+                    <h5>Permissions</h5>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="background-color: rgb(139, 211, 211);">
+                <td *ngFor="let per of Permissions;">{{per.title}}</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr *ngFor="let role of Roles;" class="w-100">
+                <td>{{role.title}}</td>
+                <td>{{role.description}}</td>
+                <td  *ngFor="let per of Permissions;">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                        [checked]="role.permissions.includes(per.id)">
+                </td>
+                
+                <td><a (click)="EditRoleModal(role.id)"><i class="fas fa-edit text-success"></i></a></td>
+                <td><a (click)="DeleteRole(role.id)"><i class="fas fa-trash text-danger"></i></a></td>
+            </tr>
+        </table>
+
+    </div>
+
+
+</div>

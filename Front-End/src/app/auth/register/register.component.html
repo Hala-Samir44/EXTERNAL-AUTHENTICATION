@@ -1,0 +1,29 @@
+<!-- <p>register works!</p> -->
+<!-- <p>login works!</p> -->
+<div style="height:100%">
+    <div class="d-flex justify-content-end p-2 m-3">
+        <div>
+            Already Have Email? <a [routerLink]="'/login'" class="">Sign In</a>
+        </div>
+    </div>
+    <h1 class="p-3 m-5 text-center">Welcome In Our App</h1>
+    <!-- <div class="bg-light p-3 pb-0">
+
+        <a [routerLink]="'/register'" class="btn bg-danger mb-0 ml-5" style="margin-left: 2rem">Register</a>
+        <a [routerLink]="'/login'"  class="btn bg-warning mb-0">Sign In</a>
+    </div> -->
+    <h5 *ngIf="notExist" class="text-danger text-center">this Email Not exist please Register First</h5>
+    <div class=" p-3 d-flex m-3">
+        <div class="d-flex flex-column m-auto">
+            <button  (click)="registerWithFacebook()" class="btn text-white d-flex justify-content-between btnFace m-2">
+                <div><i class="fab fa-facebook-square"></i></div>
+                <div class="btntext">Register with Facebook</div>
+            </button>
+            <button (click)="registerWithGoogle()"
+                class="btn text-white d-flex justify-content-between bg-danger m-2">
+                <div><i class="fab fa-google-plus-g"></i></div>
+                <div class="btntext">Register with Google</div>
+            </button>
+        </div>
+    </div>
+</div>
